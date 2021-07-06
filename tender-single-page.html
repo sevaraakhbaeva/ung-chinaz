@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <title>news-single-page</title>
+    <style>
+    table {
+        border: 1px solid #fff;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+}
+
+
+table tr {
+  background-color: #fff;
+  border: none;
+  padding: .5em;
+  opacity: 60%;
+  border-bottom: 1px solid #03a4df83;
+}
+
+.right-left-table .left{
+    text-align: left;
+}
+
+.right-left-table .right{
+    text-align: right;
+}
+
+
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+}
+
+table th {
+  background-color: #03A3DF;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  .right-left-table .left{
+    text-align: center;
+}
+
+.right-left-table .right{
+    text-align: center;
+}
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+    </style>
+</head>
+<body>
+        <div class="bg-tender">
+            <section class="sub-header">
+                <nav>
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <div class="nav-links" id="navLinks">
+                        <!--<i class="fa fa-times" onclick="hideMenu()"></i>-->
+                        <ul>
+                            <li>
+                                <a href="index.html">Бош саҳифа</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial">Биз ҳақимизда</a>
+                            </li>
+                            <li>
+                                <a href="#facilities">Ишлаб чиқариш</a>
+                            </li>
+                            <li>
+                                <a href="xizmatlar.html">Хизматлар</a>
+                            </li>
+                            <li>
+                                <a href="">Танлов</a>
+                            </li>
+                            <li>
+                                <a href="">Маҳаллийлаштириш </a>
+                            </li>
+                            <li>
+                                <a href="#footer">Боғланиш</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<i class="fa fa-bars" onclick="showMenu()"></i>-->
+                </nav>
+                <h1 style="font-family:'Alegreya', serif;">Конкурслар</h1>
+            </section>
+            <section class="tender-single">
+                    <div class="tender-main-content">
+                        <div class="tender-main-content single">
+                            <h3 class="tender-single-title">№КТ/10-2021</h3>
+                            <hr>
+                            <div class="tender-single-title-description">
+                                <h4>№KT/10-2021</h4>
+                                <p>Аренда строительных леса (нормативная нагрузка 500 кг/м. кв.)</p>
+                                <div>
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Маҳсулот миқдори</th>
+                                            <th scope="col">Ўлчов бирлиги</th>
+                                            <th scope="col">Бирлик учун бошланғич нарх</th>
+                                            <th scope="col">Ҳозирги тақдим этилган нарх</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td data-label="Маҳсулот миқдори">1</td>
+                                            <td data-label="Ўлчов бирлиги">Хизматлар</td>
+                                            <td data-label="Бирлик учун бошланғич нарх">968000000</td>
+                                            <td data-label="Ҳозирги тақдим этилган нарх">Сотилмаган</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="requirements">
+                                    <h4>Асосий талаблар</h4>
+                                    <hr>
+                                    <div class="requirement-services">
+                                        <div class="requirement-services-text">
+                                            <p>Консультационные услуги
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="lot-instructions">
+                                        <h4>
+                                            Лот йўриқномаси
+                                        </h4>
+                                        <hr>
+                                        <div class="lot-instructions-card">
+                                            <div class="tender-file-width">
+                                                <div class="row-tender-file">
+                                                    <div class="tender-file">
+                                                        <div class="tender-file_img">
+                                                            <img src="images/file-pdf.svg" alt="">
+                                                        </div>
+                                                        <div class="tender-file_info">
+                                                            <h3 class="tender-file_title">Конкурс хужжатлари</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div>
+                                        <h4>Харидор ва лот ҳақида маълумот
+                                        </h4>
+                                        <hr>
+                                        <div class="about-customer-info">
+                                            <div>
+                                                <table class="right-left-table">
+                                                    <tr>
+                                                        <td class="right">Ташкилот номи</td>
+                                                        <td class="left">«Ўзбекнефтгаз» АЖ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">СТИР</td>
+                                                        <td class="left">200837914</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">Буюртмачи манзили</td>
+                                                        <td class="left">100047, Ташкент шаҳар, Миробод тумани, Истиқбол кўчаси, 16-уй</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">Ташкилот телефони</td>
+                                                        <td class="left">+(99871) 207-27-72 (325, 299, 294, 292, 278, 216)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">Буюртмачи ҳисоб рақами</td>
+                                                        <td class="left">Электронный адрес konkurs@ung.uz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">Етказиб бериш шартлари</td>
+                                                        <td class="left">маҳаллий компаниялар учун - DDP белгиланган манзилга, чет эл компаниялари учун - DAP белгиланган жойгача</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">Етқазиб бериш муддати</td>
+                                                        <td class="left">илова қилинган хужжатлар талабларига асосан</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="right">Тўлов муддати</td>
+                                                        <td class="left">маҳаллий компаниялар учун - 15% олдиндан тулов, чет эл компаниялари учун - 100% аккредитив</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div>
+                                        <h4></h4>
+                                        <hr>
+                                        <div class="all-info-about-tender">
+                                            <div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col">№ Лот рақами</th>
+                                                        <th scope="col">Эълон килинган кун</th>
+                                                        <th scope="col">Тугаш муддати</th>
+                                                        <th scope="col">Бирлик учун бошланғич нарх</th>
+                                                        <th scope="col">Статус</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td data-label="№ Лот рақами">№КТ/14-2021</td>
+                                                        <td data-label="Эълон килинган кун">19-Июнь 2021 й.</td>
+                                                        <td data-label="Тугаш муддати">05-Июль 2021 й.</td>
+                                                        <td data-label="Бирлик учун бошланғич нарх">1200000000</td>
+                                                        <td data-label="Статус">Сотилмаган</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+         
+
+            <!--footer-->
+   
+            <section id="footer">
+                <img src="img/footer-img.png" class="footer-img" alt="">
+                <div class="title-text">
+                    <h1>«Ўзбекнефтгаз» АЖ</h1>
+                </div>
+                <div class="footer-row">
+                    <div class="footer-left">
+                        <h1>Иш тартиби</h1>
+                        <p><i class="fa fa-clock-o"></i>Иш кунлари: душанба – жума | Дам олиш кунлари: шанба ва якшанба</p>
+                        <p><i class="fa fa-clock-o"></i>Иш соати: 09:00 дан 18:00 гача | Тушлик: 13:00 дан 14:00 гача</p>
+                    </div>
+                    <div class="footer-right">
+                        <h1>Боғланиш учун маълумотлар</h1>
+                        <p>100047, Тошкент шаҳар, Миробод тумани, Истиқбол кўчаси, 16-уй <i class="fa fa-map-marker"></i></p>
+                        <p>Матбуот хизматининг электрон манзили: ungps@ung.uz <i class="fa fa-paper-plane"></i></p>
+                        <p>Бизнинг почта манзилимиз: kans@ung.uz,ung@exat.uz <i class="fa fa-paper-plane"></i></p>
+                        <p>+998 93 5386448 <i class="fa fa-phone"></i></p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h1>Ижтимоий тармоқларимиз</h1>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                    <p>ICT-developers</p>
+                </div>
+            </section>
+        </div>
+</body>
+</html>
+</body>
+</html>
